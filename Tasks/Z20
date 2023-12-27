@@ -1,0 +1,11 @@
+def is_devisible_by_11 (number) :
+  if number % 11 == 0 :
+        return True 
+  else :
+        return False 
+   
+number = float(input("Введите число"))
+if is_devisible_by_11 (number) :
+     print ("Делится на 11")
+else: 
+     print ("Не делится на 11")
