@@ -3,9 +3,10 @@ B = int(input("Введите положительное число B: "))
 C = int(input("Введите положительное число C: "))
 
 count = 0
-while A >= C and B >= C:
+while A >= C:
     A -= C
-    B -= C
-    count += 1
-
-print("Количество квадратов, размещенных на прямоугольнике:", count)
+    B1 = B
+    while B1>= C:
+        B1 -= C
+        count += 1
+print (count) 
