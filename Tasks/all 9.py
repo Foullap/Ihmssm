@@ -1,3 +1,4 @@
+num = int(input(" Введите число"))
 def number_to_words(num):
     numbers = {
         1: 'один',
@@ -17,10 +18,7 @@ def number_to_words(num):
     if num in numbers:
         return numbers[num]
     else:
-        return ""
+        return "Ошибка"
 
 if __name__ == "__main__":
-    for i in range(1, 13):
-        word = number_to_words(i)
-        if word:
-            print(f"{i} - {word}")
+    print (number_to_words(num))
